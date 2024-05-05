@@ -1,6 +1,6 @@
 const sumAll = function (start, end) {
 	let answer = 0;
-	if (arguments[0] == -1 || arguments[1] == -1) {
+	if (Math.sign(arguments[0]) == -1 || Math.sign(arguments[1].sign) == -1) {
 		return "ERROR";
 	}
 	let large;
