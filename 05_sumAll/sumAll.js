@@ -1,6 +1,19 @@
 const sumAll = function (start, end) {
 	let answer = 0;
-	for (let i = start; i <= end; i++) {
+	if (arguments[0] == -1 || arguments[1] == -1) {
+		return "ERROR";
+	}
+	let large;
+	let small;
+	if (start > end) {
+		large = start;
+		small = end;
+	} else {
+		large = end;
+		small = start;
+	}
+
+	for (let i = small; i <= large; i++) {
 		answer += i;
 	}
 	return answer;
