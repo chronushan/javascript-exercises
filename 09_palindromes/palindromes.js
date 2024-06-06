@@ -17,7 +17,8 @@ const palindromes = function (a) {
 		}
 		// console.log(reversedStr);
 	}
-
+	stringWithoutPunc = stringWithoutPunc.toLowerCase();
+	reversedStr = reversedStr.toLowerCase();
 	if (stringWithoutPunc == reversedStr) {
 		return true;
 	} else {
